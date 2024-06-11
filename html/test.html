@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>История кино</title>
+    <link rel="icon" type="image/png" href="../images/LOGOPR.svg">
+    <style>
+        /* Пример стилей для тестирования */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #F5F5F5;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #FFFFFF;
+        }
+        ul {
+            color: #888;
+        }
+    </style>
+</head>
+
+
+    <link rel = 'stylesheet' href="../css/history.css">
+<style>
+p {
+    font-size:28px;
+}
+input {
+    font-size:24px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<header  id="main">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+          <li><a href="C:/Users/user/Desktop/Диплом Гульнар 2024/projet site/index.html"> <img src="../images/6.jpg" width="50" height="50" alt="1" style="border: none;"> </a></li>
+          <li><a href="../index.html">СИЛЛАБУС</a></li>
+          <li><a href="../html/video.html">ВИДЕОЛЕКЦИИ</a></li>
+          <li><a href="../html/present.html" target="_blank">ПРЕЗЕНТАЦИИ</a></li>
+          <li><a href="../html/practica.html">ПРАКТИКА</a></li>
+          <li><a href="../html/test.html" target="_blank">ТЕСТ</a></li>
+          <li><a href="../html/glos.html">ГЛОССАРИЙ</a></li>
+              
+            </ul>
+          </nav>
+
+
+</header>
+
+<div class="head">Добро пожаловать на тестовую страницу!</div>
+<div class="main">
+
+  
+<p>Выполните задания теста:</p>
+<p>  Скорость процессора выражается в …………  = <input type="text" id="z_1"></p>
+<p>  Сколько бит требуется для хранения одной восьмеричной цифры?   <input type="text" id="z_2"></p>
+<p>  Мы группируем 8 бит вместе, чтобы создать  <input type="text" id="z_3"></p>
+<button onClick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 = "ГГц"; 
+pr_otv_zadachi_2 = "3 бита";
+pr_otv_zadachi_3 = "байт";
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+vsego_zadach = 3;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на " + procent_vip +"%.";
+}
+</script>
+</body>
+
+</body>
+</html>
